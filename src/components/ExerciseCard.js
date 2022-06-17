@@ -35,7 +35,7 @@ const ExerciseCard = ({ exercise }) => {
             <Typography
                 ml="21px"
                 color="#000"
-                fontWeight="bold"
+                fontWeight="400"
                 fontFamily="Josefin Sans"
                 sx={{ fontSize: { lg: "24px", xs: "20px" } }}
                 mt="11px"
