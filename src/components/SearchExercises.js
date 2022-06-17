@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 import { fetchData, exerciseOptions } from "../utils/fetchData";
+import Loader from "./Loader";
 
 const SearchExercises = ({ bodyPart, setBodyPart, setExercises }) => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -40,7 +41,7 @@ const SearchExercises = ({ bodyPart, setBodyPart, setExercises }) => {
             setSearchTerm("");
             setExercises(searchedExercises);
         } else {
-            return;
+            return <Loader />;
         }
     };
 
